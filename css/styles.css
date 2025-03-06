@@ -5,123 +5,167 @@
  */
 
 /* CSS Reset */
-body, header, nav, main, footer, img, h1, h3 {
- margin: 0;
- padding: 0;
- border: 0;
+body,
+header,
+nav,
+main,
+footer,
+img,
+h1,
+h3,
+ul {
+    margin: 0;
+    padding: 0;
+    border: 0;
 }
 
 /* Style rules for body and images */
 body {
- background-color: #8FA3A4;
+    background-color: #8FA3A4;
+    font-size: 1em;
+    /* Adjust font size for readability */
+    line-height: 1.5;
+    padding: 0;
+    margin: 0;
 }
 
 img {
- max-width: 100%;
- display: block;
- padding-bottom: 2%;
+    max-width: 100%;
+    display: block;
+    padding-bottom: 2%;
+}
+
+/* Style rules for mobile viewport */
+
+/* Style rules to show mobile class and hide tab-desk class */
+.mobile {
+    display: block;
+}
+
+.tab-desk {
+    display: none;
+}
+
+/* Style rules for header area */
+.mobile h1 {
+    padding: 2%;
+    text-align-last: center;
+    font-family: "Berkshire Swash", serif;
+}
+
+.mobile h3 {
+    padding: 2%;
+    text-align-last: center;
+    font-family: "Assistant", sans-serif;
+}
+
+header {
+    width: 80%;
+    margin: auto;
+}
+
+h1 {
+    display: block;
+    color: #000000;
+    text-align: center;
+    padding: 0 1em;
+    text-decoration: none;
+}
+
+h3 {
+    display: block;
+    color: #000000;
+    text-align: center;
+    padding: 1em;
+    text-decoration: none;
 }
 
 /* Style rules for navigation area */
 nav {
- width: 80%;
- margin: auto;
+    width: 80%;
+    margin: auto;
 }
 
-nav ul{
- list-style-type: none;
- margin: 0;
- text-align: center;
+nav ul {
+    list-style-type: none;
+    text-align: center;
 }
 
 nav li {
- text-align: center;
- display: inline-block;
- font-size: 1.5em;
- font-family: Geneva, Tahoma, sans-serif;
+    text-align: center;
+    display: block;
+    border-top: solid 0.5px;
+    color: #8FA3A4;
+    font-size: 1.5em;
+    font-family: Geneva, Tahoma, sans-serif;
 }
 
 nav li a {
- background-color: #4f4f4f;
- font-weight: bold;
- display: block; 
- color: #C7C7C7;
- text-align: center;
- padding: 0.5em 1em;
- text-decoration: none;
-}
-
-/* Style rules for header area */
-header {
- width: 80%;
- margin: auto;
-}
-
-h1{
- display: block; 
- color: #000000;
- text-align: center;
- padding: 0 1em;
- text-decoration: none;
- font-family: Geneva, Tahoma, sans-serif
-}
-
-h3{
- display: block; 
- color: #000000;
- text-align: center;
- padding: 1em;
- text-decoration: none;
- font-family: Geneva, Tahoma, sans-serif;
+    background-color: #4f4f4f;
+    font-weight: bold;
+    display: block;
+    color: #C7C7C7;
+    text-align: center;
+    padding: 0.5em 1em;
+    text-decoration: none;
 }
 
 /* Style rules for main content */
 main {
- padding: 2%;
- font-size: 1.15em;
- font-family: Geneva, Tahoma, sans-serif;
+    padding: 2%;
+    font-size: 1.15em;
+    font-family: "Assistant", sans-serif;
 }
 
 main p {
- padding-top: 1%;
- list-style-type: none;
+    padding-top: 1%;
+    list-style-type: none;
+    font-size: .9em;
 }
 
 main li {
- float: left;
- margin: 5em 3em 0 0;
- list-style-type: none;
- padding-bottom: 10%; 
+    float: left;
+    margin: 5em 3em 0 0;
+    list-style-type: none;
+    padding-bottom: 10%;
 }
 
 #contact {
- padding-left: 5%;
- margin: 1em
+    text-align: center;
+    margin: 1em;
 }
 
 #contact a {
-text-decoration: none;
-color: #000;
+    text-decoration: none;
+    color: #000;
+}
+
+.round {
+    border-radius: 6px;
 }
 
 .map {
-border: 8px solid #000;
+    border: 2px solid #000;
+    border-radius: 6px;
+    width: 95%;
+    height: 50%;
 }
 
-/* Style rules for footer content */ 
+/* Style rules for footer content */
 footer {
- clear: both;
- text-align: center;
- font-size: 0.85em;
- background-color: #8FA3A4;
+    clear: both;
+    text-align: center;
+    font-size: 0.85em;
+    background-color: #8FA3A4;
 }
+
 footer a {
- color: #C7C7C7;
- text-align: center;
- padding-top: 1%;
- padding-bottom: 1%;
- padding-left: 0%;
- padding-right: 0%;
- text-decoration: none;
- font-family: Geneva, Tahoma, sans-serif;
+    color: #C7C7C7;
+    text-align: center;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    padding-left: 0%;
+    padding-right: 0%;
+    text-decoration: none;
+    font-family: Geneva, Tahoma, sans-serif;
 }
