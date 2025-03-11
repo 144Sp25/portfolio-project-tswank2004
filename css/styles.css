@@ -126,7 +126,9 @@ main p {
 
 main li {
     float: left;
-    margin: 5em 3em 0 0;
+    font-size: 1.15em;
+    text-align: left;
+    margin: 1em;
     list-style-type: none;
     padding-bottom: 10%;
 }
@@ -169,4 +171,89 @@ footer a {
     padding-right: 0%;
     text-decoration: none;
     font-family: Geneva, Tahoma, sans-serif;
+}
+
+/* Media Query for Tablet Viewport */
+@media screen and (min-width: 620px),
+print {
+
+    /* Tablet Viewport: Show tab-desk class, hide mobile class */
+    .tab-desk {
+        display: block;
+    }
+
+    .mobile {
+        display: none;
+    }
+
+    /* Tablet Viewport: Style rules for nav area */
+    nav li {
+        border-top: none;
+        display: inline-block;
+        font-size: 1.25em;
+    }
+
+    nav li a {
+        padding: 0.5em;
+    }
+
+}
+
+/* Media Query for Large Desktop Viewports */
+@media screen and (min-width: 1921px) {
+
+    body {
+        background: linear-gradient(#C7C7C7, #8FA3A4);
+    }
+
+    #wrapper {
+        width: 1920px;
+        margin-top: 0;
+        margin-bottom: 0;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    main {
+        background-color: #8FA3A4;
+    }
+
+}
+
+/* Media Query for Print */
+@media print {
+
+    body {
+        background-color: #fff;
+        color: #000;
+    }
+
+}
+
+/* Media Quert for Desktop Viewport */
+@media screen and (min-width: 1000px),
+print {
+
+    /* Desktop Viewport: Style rules for nav area */
+    nav li {
+        font-size: 1.5em;
+    }
+
+    nav li a {
+        padding-top: 0.5em;
+        padding-bottom: 0.5em;
+        padding-left: 1.5em;
+        padding-right: 1.5em;
+    }
+
+    nav li a:hover {
+        color: #4f4f4f;
+        background-color: #C7C7C7;
+    }
+
+    /* Desktop Viewport: Style rules for main content */
+    #info ul {
+        margin-left: 5%;
+    }
+
 }
