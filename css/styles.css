@@ -23,7 +23,6 @@ ul {
 body {
     background-color: #8FA3A4;
     font-size: 1em;
-    /* Adjust font size for readability */
     line-height: 1.5;
     padding: 0;
     margin: 0;
@@ -32,7 +31,32 @@ body {
 img {
     max-width: 100%;
     display: block;
-    padding-bottom: 2%;
+    margin: 0 auto;
+    text-align: center;
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+
+.imagesCol {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 40px;
+}
+
+.imagesCol img {
+    width: 30%;
+    height: auto;
+    max-width: 100%;
+    object-fit: contain;
+}
+
+h2 {
+    clear: both;
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 1.5em;
 }
 
 /* Style rules for mobile viewport */
@@ -48,13 +72,13 @@ img {
 
 /* Style rules for header area */
 .mobile h1 {
-    padding: 2%;
+    padding: 1%;
     text-align-last: center;
     font-family: "Berkshire Swash", serif;
 }
 
 .mobile h3 {
-    padding: 2%;
+    padding-top: 0%;
     text-align-last: center;
     font-family: "Assistant", sans-serif;
     font-size: 1em;
@@ -84,7 +108,8 @@ h3 {
 /* Style rules for navigation area */
 nav {
     width: 80%;
-    margin: auto;
+    margin: 0 auto;
+    padding: 0;
 }
 
 nav ul {
@@ -187,6 +212,21 @@ print {
     }
 
     /* Tablet Viewport: Style rules for nav area */
+    nav {
+        width: 100%;
+        background-color: #4f4f4f;
+    }
+
+    nav ul {
+        display: flex;
+        justify-content: center;
+        padding: 5px 0;
+        margin: 0;
+        list-style-type: none;
+        width: 100%;
+    }
+
+
     nav li {
         border-top: none;
         display: inline-block;
@@ -197,6 +237,18 @@ print {
         padding: 0.5em;
     }
 
+}
+
+/* Media Query for Mobile Viewport */
+@media screen and (max-width: 620px) {
+    .imagesCol {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .imagesCol img {
+        width: 80%;
+    }
 }
 
 /* Media Query for Large Desktop Viewports */
@@ -230,7 +282,7 @@ print {
 
 }
 
-/* Media Quert for Desktop Viewport */
+/* Media Query for Desktop Viewport */
 @media screen and (min-width: 1000px),
 print {
 
