@@ -255,7 +255,7 @@ print {
 @media screen and (min-width: 1921px) {
 
     body {
-        background: linear-gradient(#C7C7C7, #8FA3A4);
+        background: linear-gradient(to bottom, #C7C7C7, #8FA3A4);
     }
 
     #wrapper {
